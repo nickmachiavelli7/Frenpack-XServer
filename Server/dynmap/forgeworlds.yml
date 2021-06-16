@@ -1,0 +1,94 @@
+worlds:
+-   sealevel: 64
+    nether: false
+    name: DIM50
+    the_end: false
+    title: world/The Abyssal Wasteland
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM51
+    the_end: false
+    title: world/The Dreadlands
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM52
+    the_end: false
+    title: world/Omothol
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM53
+    the_end: false
+    title: world/The Dark Realm
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM1
+    the_end: true
+    title: world/The End
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM68
+    the_end: false
+    title: world/Tent Dimension
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM69
+    the_end: false
+    title: world/Pocket Plane
+    height: 256
+-   sealevel: 64
+    nether: true
+    name: DIM-1
+    the_end: false
+    title: world/Nether
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM7
+    the_end: false
+    title: world/Twilight Forest
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM-42
+    the_end: false
+    title: world/The Outer Lands
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: world
+    the_end: false
+    title: world/Overworld
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM-37
+    the_end: false
+    title: world/Spirit World
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM-39
+    the_end: false
+    title: world/Mirror
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM-38
+    the_end: false
+    title: world/Torment
+    height: 256
+-   sealevel: 64
+    nether: false
+    name: DIM-2147483648
+    the_end: false
+    title: world/CONTROL
+    height: 256
+isMCPC: false
+useSaveFolderAsName: true
+maxWorldHeight: 256

@@ -1,0 +1,156 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 6/16/21 12:37 PM
+Description: Exception in server tick loop
+
+cpw.mods.fml.common.LoaderException: java.lang.NoClassDefFoundError: net/minecraft/client/gui/GuiScreen
+	at cpw.mods.fml.common.LoadController.transition(LoadController.java:163)
+	at cpw.mods.fml.common.Loader.preinitializeMods(Loader.java:559)
+	at cpw.mods.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:88)
+	at cpw.mods.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:314)
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:117)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:387)
+	at net.minecraft.server.MinecraftServer$2.run(MinecraftServer.java:685)
+Caused by: java.lang.NoClassDefFoundError: net/minecraft/client/gui/GuiScreen
+	at com.chaosthedude.notes.Notes.preInit(Notes.java:30)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at cpw.mods.fml.common.FMLModContainer.handleModStateEvent(FMLModContainer.java:532)
+	at sun.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.sendEventToModContainer(LoadController.java:212)
+	at cpw.mods.fml.common.LoadController.propogateStateMessage(LoadController.java:190)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at com.google.common.eventbus.EventSubscriber.handleEvent(EventSubscriber.java:74)
+	at com.google.common.eventbus.SynchronizedEventSubscriber.handleEvent(SynchronizedEventSubscriber.java:47)
+	at com.google.common.eventbus.EventBus.dispatch(EventBus.java:322)
+	at com.google.common.eventbus.EventBus.dispatchQueuedEvents(EventBus.java:304)
+	at com.google.common.eventbus.EventBus.post(EventBus.java:275)
+	at cpw.mods.fml.common.LoadController.distributeStateMessage(LoadController.java:119)
+	at cpw.mods.fml.common.Loader.preinitializeMods(Loader.java:556)
+	... 5 more
+Caused by: java.lang.ClassNotFoundException: net.minecraft.client.gui.GuiScreen
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:191)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	at java.lang.ClassLoader.loadClass(Unknown Source)
+	... 32 more
+Caused by: java.lang.RuntimeException: Attempted to load class bdw for invalid side SERVER
+	at cpw.mods.fml.common.asm.transformers.SideTransformer.transform(SideTransformer.java:50)
+	at net.minecraft.launchwrapper.LaunchClassLoader.runTransformers(LaunchClassLoader.java:279)
+	at net.minecraft.launchwrapper.LaunchClassLoader.findClass(LaunchClassLoader.java:176)
+	... 34 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 1.7.10
+	Operating System: Windows 10 (amd64) version 10.0
+	Java Version: 1.8.0_291, Oracle Corporation
+	Java VM Version: Java HotSpot(TM) 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1114053240 bytes (1062 MB) / 1396178944 bytes (1331 MB) up to 1908932608 bytes (1820 MB)
+	JVM Flags: 2 total; -Xms1G -Xmx2G
+	AABB Pool Size: 0 (0 bytes; 0 MB) allocated, 0 (0 bytes; 0 MB) used
+	IntCache: cache: 0, tcache: 0, allocated: 0, tallocated: 0
+	FML: MCP v9.05 FML v7.10.99.99 Minecraft Forge 10.13.4.1614 78 mods loaded, 78 mods active
+	States: 'U' = Unloaded 'L' = Loaded 'C' = Constructed 'H' = Pre-initialized 'I' = Initialized 'J' = Post-initialized 'A' = Available 'D' = Disabled 'E' = Errored
+	UCH	mcp{9.05} [Minecraft Coder Pack] (minecraft.jar) 
+	UCH	FML{7.10.99.99} [Forge Mod Loader] (forge-1.7.10.jar) 
+	UCH	Forge{10.13.4.1614} [Minecraft Forge] (forge-1.7.10.jar) 
+	UCH	<CoFH ASM>{000} [CoFH ASM] (minecraft.jar) 
+	UCH	mod_ThreadedLighting{1.7.10-1.0} [Threaded Lighting] (minecraft.jar) 
+	UCH	FastCraft{1.23} [FastCraft] (FastCraft-Mod-1.7.10.jar) 
+	UCH	debug{1.0} [debug] (Dense-Ores-Mod-1.7.10.jar) 
+	UCH	gilded-games-util{1.7.10-1.2} [Gilded Games Utility] (gilded-games-util-1.7.10-1.9.jar) 
+	UCH	abyssalcraft{1.9.1.3} [AbyssalCraft] (AbyssalCraft-1.7.10-1.9.1.3-FINAL.jar) 
+	UCH	AWWayofTime{v1.3.3} [Blood Magic: Alchemical Wizardry] (Blood-Magic-Mod-1.7.10.jar) 
+	UCH	guideapi{1.7.10-1.0.1-29} [Guide-API] (Guide-API-1.7.10-1.0.1-29.jar) 
+	UCH	NOVA{2015-10-09} [NOVA] (Animus-Mod-1.7.10.jar) 
+	UCH	antiqueatlas{4.4.4} [Antique Atlas] (Antique-Atlas-Mod-1.7.10.jar) 
+	UCH	CoFHCore{1.7.10R3.1.4} [CoFH Core] (CoFHCore-[1.7.10]3.1.4-329.jar) 
+	UCH	ImmersiveEngineering{0.7.7} [Immersive Engineering] (Immersive-Engineering-Mod-1.7.10.jar) 
+	UCH	Baubles{1.0.1.10} [Baubles] (Baubles-1.7.10-1.0.1.10.jar) 
+	UCH	Thaumcraft{4.2.3.5} [Thaumcraft] (Thaumcraft-Mod-1.7.10.jar) 
+	UCH	arcane_engineering{0.2.7} [Arcane Engineering] (arcane_engineering-0.2.7.jar) 
+	UCH	MovingWorld{1.7.10-1.7.12B} [Moving World] (movingworld-1.7.10-1.7.12B.jar) 
+	UCH	ArchimedesShipsPlus{1.7.10-1.7.12} [Archimedes' Ships Plus] (archimedesshipsplus-1.7.10-1.7.12.jar) 
+	UCH	BiblioCraft{1.11.7} [BiblioCraft] (BiblioCraft[v1.11.7][MC1.7.10].jar) 
+	UCH	Mantle{1.7.10-0.3.2.jenkins191} [Mantle] (Mantle-1.7.10-0.3.2b.jar) 
+	UCH	Natura{2.2.0} [Natura] (Natura-Mod-1.7.10.jar) 
+	UCH	BiblioWoodsNatura{1.5} [BiblioWoods Natura Edition] (BiblioWoods-Natura-Edition-Mod-1.7.10.jar) 
+	UCH	Botania{r1.8-249} [Botania] (Botania-Mod-1.7.10.jar) 
+	UCH	TwilightForest{2.3.7} [The Twilight Forest] (Twilight-Forest-Mod-1.7.10.jar) 
+	UCH	chisel{2.9.5.11} [Chisel] (Chisel-Mod-1.7.10.jar) 
+	UCH	CarpentersBlocks{3.3.8.1} [Carpenter's Blocks] (Carpenters-Blocks-Mod-1.7.10.jar) 
+	UCH	clockworkphase{1.7.10_1.0f} [Clockwork Phase] (Clockwork-Phase-Mod-1.7.10.jar) 
+	UCH	cookingbook{1.0.140} [Cooking for Blockheads] (Cooking-for-Blockheads-Mod-1.7.10.jar) 
+	UCH	craftguide{1.7.1.0} [CraftGuide] (CraftGuide-1.7.1.0-forge.jar) 
+	UCH	DeathCounter{4.0.0} [DeathCounter] (DeathCounter-4.0.0.jar) 
+	UCH	dsurround{1.0.6.4} [Dynamic Surroundings] (DynamicSurroundings-1.7.10-1.0.6.4.jar) 
+	UCH	Dynmap{2.3-163} [Dynmap] (Dynmap-2.3-forge-1.7.10.jar) 
+	UCH	eplus{3.0.2-d} [Enchanting Plus] (Enchanting-Plus-Mod-1.7.10.jar) 
+	UCH	EnderZoo{1.7.10-1.0.15.32} [Ender Zoo] (Ender-Zoo-Mod-1.7.10.jar) 
+	UCH	endercore{1.7.10-0.2.0.39_beta} [EnderCore] (EnderCore-1.7.10.jar) 
+	UCH	evilcraft{0.9.12} [EvilCraft] (EvilCraft-Mod-1.7.10.jar) 
+	UCH	golems{1.20} [Extra Golems] (Extra-Golems-Mod-1.7.10.jar) 
+	UCH	harvestcraft{1.7.10j} [Pam's HarvestCraft] (HarvestCraft-Mod-1.7.10.jar) 
+	UCH	TConstruct{1.7.10-1.8.8.build988} [Tinkers' Construct] (TConstruct-Mod-1.7.10.jar) 
+	UCH	ExtraTiC{1.4.6} [ExtraTiC] (ExtraTiC-1.7.10-1.4.6.jar) 
+	UCH	fastleafdecay{1.3} [Fast Leaf Decay] (FastLeafDecay-Mod-1.7.10.jar) 
+	UCH	ForbiddenMagic{1.7.10-0.575} [Forbidden Magic] (Forbidden-Magic-Mod-1.7.10.jar) 
+	UCH	ForgeEssentials{1.4.6} [Forge Essentials] (forgeessentials-1.7.10-1.4.6.1369-server.jar) 
+	UCH	ForgottenRelics{1.7.3} [Forgotten Relics] (ForgottenRelics-1.7.3-[Final].jar) 
+	UCH	GraveStone{2.17.1} [GraveStone] (GraveStone-2.17.1.jar) 
+	UCH	HelpFixer{1.0.7} [HelpFixer] (HelpFixer-1.0.7.jar) 
+	UCH	astikoor{1.0.0} [Astikoor] (Horse-Carts-Mod-1.7.10.jar) 
+	UCH	login_shield{1.7.10-2-gf6e21a7} [Login Shield] (Login_Shield-1.7.10-2-gf6e21a7.jar) 
+	UCH	millenaire{6.0.1} [Mill√©naire] (millenaire-6.0.2.jar) 
+	UCH	bettercraft{2.7.6} [MoreCraft] (MoreCraft-Mod-1.7.10.jar) 
+	UCH	Morpheus{1.7.10-1.6.21} [Morpheus] (Morpheus-1.7.10-1.6.21.jar) 
+	UCH	cfm{3.4.7} [ß9MrCrayfish's Furniture Mod] (MrCrayfishs-Furniture-Mod-1.7.10.jar) 
+	UCH	Mystcraft{0.12.3.04} [Mystcraft] (Mystcraft-Mod-1.7.10.jar) 
+	UCH	necromancy{1.7.2} [Necromancy] (Necromancy-Mod-1.7.10.jar) 
+	UCH	netherportalfix{1.0} [Nether Portal Fix] (NetherPortalFix-Mod-1.7.10.jar) 
+	UCH	recipehandler{1.7.10} [NoMoreRecipeConflict] (No-More-Recipe-Conflict-Mod-1.7.10.jar) 
+	UCH	yurtmod{1.12.1} [Nomadic Tents] (Nomadic-Tents-Mod-1.7.10.jar) 
+	UCE	notes{1.1.1} [Notes] (Notes-1.7.10-1.1.1.jar) 
+	UCH	qCraft{1.7.10-1.2.2} [qCraft] (qCraft-1.7.10-1.2.2.jar) 
+	UCH	libsandstone{1.0.0} [libsandstone] (LibSandstone-1.0.0.jar) 
+	UCH	xreliquary{1.2.DEV} [Reliquary] (Reliquary-Mod-1.7.10.jar) 
+	UCH	AS_Ruins{15.4} [Ruins Spawning System] (Ruins-1.7.10.jar) 
+	UCH	SpecialMobs{3.2.2} [Special Mobs] (Special-Mobs-Mod-1.7.10.jar) 
+	UCH	symcalc{0.14} [Symcalc] (symcalc-0.14.jar) 
+	UCH	tcnodetracker{1.1.2} [TC Node Tracker] (tcnodetracker-1.7.10-1.1.2.jar) 
+	UCH	ThaumicExploration{0.6.0} [Thaumic Exploration] (Thaumic-Exploration-Mod-1.7.10.jar) 
+	UCH	ThaumicHorizons{1.1.9} [Thaumic Horizons] (Thaumic-Horizons-Mod-1.7.10.jar) 
+	UCH	TMechworks{0.2.15.106} [Tinkers' Mechworks] (Tinkers-Mechworks-Mod-1.7.10.jar) 
+	UCH	wanionlib{1.7.10-1.6} [WanionLib] (WanionLib-1.7.10.jar) 
+	UCH	waystones{1.0.12} [Waystones] (Waystones-Mod-1.7.10.jar) 
+	UCH	witchery{0.24.1} [Witchery] (Witchery-Mod-1.7.10.jar) 
+	UCH	witcherypatch{1.0.0} [WitcheryPatch] (WitcheryPatch-1.7.10-1.0.0.jar) 
+	UCH	worldedit{6.0-beta-01} [WorldEdit] (worldedit-forge-mc1.7.10-6.0-beta-01.jar) 
+	UCH	bspkrsCore{6.15} [bspkrsCore] ([1.7.10]bspkrsCore-universal-6.15.jar) 
+	UCH	denseores{1.0} [Dense Ores] (Dense-Ores-Mod-1.7.10.jar) 
+	UCH	UniDict{1.7.10-2.9.2} [UniDict] (UniDict-Mod-1.7.10.jar) 
+	CoFHCore: -[1.7.10]3.1.4-329
+	Mantle Environment: Environment healthy.
+	TConstruct Environment: Environment healthy.
+	ForgeEssentials: Running ForgeEssentials 1.4.6.1369 (1dd1f76). Modules loaded: Afterlife, Backups, Chat, Commands, Economy, JScripting, Multiworld, Permissions, PlayerLogger, Protection, Remote, SignTools, Teleport, Tickets, WorldBorder, factions, mapper
+	Chisel: Errors like "[FML]: Unable to lookup ..." are NOT the cause of this crash. You can safely ignore these errors. And update forge while you're at it.
+	Profiler Position: N/A (disabled)
+	Is Modded: Definitely; Server brand changed to 'fml,forge'
+	Type: Dedicated Server (map_server.txt)

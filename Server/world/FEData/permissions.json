@@ -1,0 +1,182 @@
+{
+  "worldZones": {
+    "-1": {
+      "dimensionID": -1,
+      "areaZones": [],
+      "id": 10,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "0": {
+      "dimensionID": 0,
+      "areaZones": [],
+      "id": 15,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "-2147483648": {
+      "dimensionID": -2147483648,
+      "areaZones": [],
+      "id": 16,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "1": {
+      "dimensionID": 1,
+      "areaZones": [],
+      "id": 13,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "68": {
+      "dimensionID": 68,
+      "areaZones": [],
+      "id": 2,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "-37": {
+      "dimensionID": -37,
+      "areaZones": [],
+      "id": 3,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "-38": {
+      "dimensionID": -38,
+      "areaZones": [],
+      "id": 4,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "69": {
+      "dimensionID": 69,
+      "areaZones": [],
+      "id": 14,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "-39": {
+      "dimensionID": -39,
+      "areaZones": [],
+      "id": 5,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "7": {
+      "dimensionID": 7,
+      "areaZones": [],
+      "id": 7,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "-42": {
+      "dimensionID": -42,
+      "areaZones": [],
+      "id": 6,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "50": {
+      "dimensionID": 50,
+      "areaZones": [],
+      "id": 12,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "51": {
+      "dimensionID": 51,
+      "areaZones": [],
+      "id": 11,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "52": {
+      "dimensionID": 52,
+      "areaZones": [],
+      "id": 9,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    },
+    "53": {
+      "dimensionID": 53,
+      "areaZones": [],
+      "id": 8,
+      "playerPermissions": {},
+      "groupPermissions": {}
+    }
+  },
+  "playerGroups": {},
+  "id": 1,
+  "playerPermissions": {
+    "(fefefefe-fefe-fefe-fefe-fefefefefefe|$SERVER)": {
+      "*": "true",
+      "fe.internal.player.known": "true"
+    },
+    "(fefefefe-fefe-fefe-fefe-fefefefefecc|$RCON)": {
+      "*": "true",
+      "fe.internal.player.known": "true"
+    },
+    "(fefefefe-fefe-fefe-fefe-fefefefefecb|$COMMANDBLOCK)": {
+      "*": "true",
+      "fe.internal.player.known": "true"
+    }
+  },
+  "groupPermissions": {
+    "_PLAYERS_": {
+      "fe.remote.chat.send": "true",
+      "fe.internal.group.priority": "1",
+      "fe.internal.group": "true"
+    },
+    "_NPC_": {
+      "fe.internal.group.name": "NPCs",
+      "fe.internal.group.priority": "1",
+      "fe.internal.group": "true"
+    },
+    "_FAKEPLAYERS_": {
+      "fe.internal.group.priority": "15",
+      "fe.internal.group": "true",
+      "fe.protection.*": "true"
+    },
+    "_OPS_": {
+      "fe.internal.prefix": "[\u0026cOP\u0026f]",
+      "fe.internal.group.priority": "50",
+      "fe.internal.group": "true"
+    },
+    "_ALL_": {
+      "fe.remote.chat.send": "false",
+      "some.test.permission": "false",
+      "fe.internal.group.name": "players",
+      "fe.internal.group.priority": "0",
+      "fe.internal.group": "true"
+    },
+    "_CREATIVE_": {
+      "fe.internal.group": "true"
+    },
+    "faction_rank_owner": {
+      "fe.faction.members.*": "true",
+      "fe.faction.leave": "false",
+      "fe.faction.ally": "true",
+      "fe.faction.friendlyfire": "true",
+      "fe.faction.invite": "true",
+      "fe.internal.group.priority": "18",
+      "fe.internal.group.parents": "faction_rank_op",
+      "fe.faction.delete": "true"
+    },
+    "faction_rank_op": {
+      "fe.faction.members.*": "true",
+      "fe.faction.ally": "true",
+      "fe.faction.friendlyfire": "true",
+      "fe.faction.invite": "true",
+      "fe.internal.group.priority": "16"
+    },
+    "_ADVENTURE_": {
+      "fe.internal.group": "true"
+    },
+    "_GUESTS_": {
+      "fe.internal.prefix": "[GUEST]",
+      "fe.internal.group.priority": "10",
+      "fe.internal.group": "true"
+    }
+  }
+}

@@ -1,0 +1,11 @@
+
+Loading excluded list from: C:\Users\maxkb\AppData\Roaming\.minecraft\saves\New World--\The_Abyss
+No exclusions found for this world.
+
+Loading options from: C:\Users\maxkb\AppData\Roaming\.minecraft\saves\New World--\The_Abyss
+tries_per_chunk_normal = 6
+chance_to_spawn_normal = 10.0
+templateInstancesMinDistance = 256.0
+anyRuinsMinDistance = 64.0
+Ruins mod loaded successfully for world C:\Users\maxkb\AppData\Roaming\.minecraft\saves\New World--\The_Abyss, template files: 32
+ate files: 32

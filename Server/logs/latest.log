@@ -1,0 +1,66 @@
+[12:38:12] [Server thread/INFO]: Starting minecraft server version 1.7.10
+[12:38:46] [Server thread/INFO]: Loading properties
+[12:38:46] [Server thread/INFO]: Default game type: SURVIVAL
+[12:38:46] [Server thread/INFO]: Generating keypair
+[12:38:46] [Server thread/INFO]: Starting Minecraft server on *:25565
+[12:40:07] [Server thread/INFO]: Preparing level "world"
+[12:40:37] [Thread-20/INFO]: Starting backup of dim 68...
+[12:40:37] [Thread-20/INFO]: Backup finished
+[12:40:37] [Thread-26/INFO]: Starting backup of dim -42...
+[12:40:37] [Thread-26/INFO]: Backup finished
+[12:40:37] [Thread-25/INFO]: Starting backup of dim -39...
+[12:40:37] [Thread-25/INFO]: Backup finished
+[12:40:37] [Thread-24/INFO]: Starting backup of dim -38...
+[12:40:37] [Thread-24/INFO]: Backup finished
+[12:40:37] [Thread-23/INFO]: Starting backup of dim -37...
+[12:40:37] [Thread-23/INFO]: Backup finished
+[12:40:37] [Thread-36/INFO]: Starting backup of dim 7...
+[12:40:37] [Thread-36/INFO]: Backup finished
+[12:40:37] [Thread-39/INFO]: Starting backup of dim 53...
+[12:40:37] [Thread-39/INFO]: Backup finished
+[12:40:37] [Thread-42/INFO]: Starting backup of dim 52...
+[12:40:37] [Thread-42/INFO]: Backup finished
+[12:40:37] [Thread-45/INFO]: Starting backup of dim -1...
+[12:40:37] [Thread-45/INFO]: Backup finished
+[12:40:38] [Thread-48/INFO]: Starting backup of dim 51...
+[12:40:38] [Thread-48/INFO]: Backup finished
+[12:40:38] [Thread-51/INFO]: Starting backup of dim 50...
+[12:40:38] [Thread-51/INFO]: Backup finished
+[12:40:38] [Thread-54/INFO]: Starting backup of dim 1...
+[12:40:38] [Thread-54/INFO]: Backup finished
+[12:40:38] [Thread-57/INFO]: Starting backup of dim 69...
+[12:40:38] [Thread-57/INFO]: Backup finished
+[12:40:38] [Thread-60/INFO]: Starting backup of dim 0...
+[12:40:38] [Server thread/INFO]: Preparing start region for level 0
+[12:40:39] [Thread-60/INFO]: Backup finished
+[12:40:39] [Server thread/INFO]: Done (44.673s)! For help, type "help" or "?"
+[12:40:51] [Thread-88/INFO]: Starting backup of dim -2147483648...
+[12:40:51] [Thread-88/INFO]: Backup finished
+[12:41:02] [Server thread/INFO]: --- Showing help page 1 of 30 (/help <page>) ---
+[12:41:02] [Server thread/INFO]: /bloodmagic help
+[12:41:02] [Server thread/INFO]: //expand [direction] <number of blocks to expand> Expands the currently selected area.
+[12:41:02] [Server thread/INFO]: //expandY: Expands the currently selected area from the top to the bottom of the world.
+[12:41:02] [Server thread/INFO]: //fedesel Deselects the selection
+[12:41:02] [Server thread/INFO]: //fepos1 [<x> <y> <z] or [here] Sets selection positions
+[12:41:02] [Server thread/INFO]: //fepos2 [<x> <y> <z] or [here] Sets selection positions
+[12:41:02] [Server thread/INFO]: //fewand [rebind|unbind|ITEM] Toggles the wand
+[12:41:08] [Server thread/INFO]: Stopping the server
+[12:41:14] [Server thread/INFO]: Stopping server
+[12:41:14] [Server thread/INFO]: Saving players
+[12:41:14] [Server thread/INFO]: Saving worlds
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Overworld
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Nether
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/The End
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Tent Dimension
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Spirit World
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Torment
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Mirror
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/The Outer Lands
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Twilight Forest
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/The Dark Realm
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Omothol
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/The Dreadlands
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/The Abyssal Wasteland
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/CONTROL
+[12:41:14] [Server thread/INFO]: Saving chunks for level 'world'/Pocket Plane
+[12:41:14] [Thread-107/INFO]: Starting backup of dim 0...
