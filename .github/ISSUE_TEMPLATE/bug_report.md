@@ -10,6 +10,9 @@ assignees: nickmachiavelli7
 **Describe the bug**
 A clear and concise description of what the bug is.
 
+**Date & Time**
+Please provide the date and time of your error. PLEASE USE UTC AS YOUR TIMEZONE. The server runs on UTC and I will be unable to compare server events.
+
 **To Reproduce**
 Steps to reproduce the behavior:
 1. Go to '...'
@@ -17,15 +20,15 @@ Steps to reproduce the behavior:
 3. Scroll down to '....'
 4. See error
 
-**Expected behavior**
-A clear and concise description of what you expected to happen.
-
 **Screenshots**
 If applicable, add screenshots to help explain your problem.
 
 **Device Data**
  - OS: [e.g. iOS]
  - Version [e.g. 22]
+
+**Log Files**
+Please zip the "crash-reports" and "logs" folders from your local client and place them here if the issue is a client crash or lag issue.
 
 **Additional context**
 Add any other context about the problem here.
